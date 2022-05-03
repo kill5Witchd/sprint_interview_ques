@@ -1,0 +1,105 @@
+1.What is difference in Overloading and Over riding
+Method Overloading occurs when a class has more than one method having the same name but different in parameters or return type.
+Method Overloading helps to increase the readability of the program and easy appilication
+It is performed within the class
+Parameters must be different in case of method overloading
+Method overloading is an example of compile time polymorphism
+
+Method Overriding occurs when the method of the superclass is overridden in the subclass to provide more specific implementation
+Parameters must be same in case of method overriding.
+It occurs in while inheritance
+Method overriding is an example of run time polymorphism
+
+2.If both the functions are statis can we over ride
+No, Static method are bonded at the compile time using static binding,so we cannot overide it.
+
+3. Diffference bew Final , Finally and Finalize
+Final is a keyword,that is used to apply restriction on classes,methods and variables.
+It cannot be inherited, and if value is once declared it cannot be changed or re-initialised.
+
+Finally is a block. It is used to place important code in this block.
+It will execute irrespective of exception handling.
+
+Finalize is a method. It perform clean up process before the object is collected by garbage collector
+
+4.What are maker Interfaces?
+It is an interface, that has no constants or methods inside it.
+It provides run time type information about the objects
+
+5.What is Singleton class?
+A class that have only one object at a time is Singleton class
+
+6.What is the underlying Data structure for Arraylist and Linkedlist?
+Both are two different imeplemetations of List interface.
+The underlyind data structure for ArrayList is an array.
+The underlying data structue for Linkedlist is list.
+
+7.What is hash collision?
+Hash collision is a random match in hash value that occur when a hashing algorithm produces the same hash claue for 2 distinct pices of data value 
+
+8.What are lambda Expressions?
+Lamda Expression is a small block of code , that take in parameters and return a value
+It provide a concise way to represent one method interface using an expression
+
+9.Whats is functional interface?
+A Functional interface is an interface with just one abstract method declared in it.
+lambda expressions can be used to represent the instance of a functional interface. 
+A functional interface can have any number of default methods. 
+
+10.What are optional classes in Java 8?
+It is a final class that is used to deal with NullPointerException in java Application.
+
+11.What is faced design pattern and Adapter and difference between them?
+Facade pattern is more like a helper for client applications
+Facade pattern can be applied at any point of development, usually when the number of interfaces grow and system gets complex.
+Subsystem interfaces are not aware of Facade and they shouldn’t have any reference of the Facade interface
+Facade pattern should be applied for similar kind of interfaces, its purpose is to provide a single interface rather than multiple interfaces that does the similar kind of jobs
+
+Adaper, It is a structural pattern
+It is useful to work with two incompatible interfaces
+It makes things work after they're designed
+
+12.What are Solid principles?
+SOLID is a popular set of design principles that are used in object-oriented software development.
+SOLID stands for single responsibility principle, open-closed principle, Liskov substitution principle, 
+interface segregation principle, and dependency inversion principle.
+
+
+13. What does @component and @scan do in Sprinboot annaotation
+What is the use of @component annotation in Spring boot?
+@Component is an annotation that allows Spring to automatically detect our custom beans.
+With Spring, we use the @ComponentScan annotation along with the @Configuration annotation to specify the packages that we want to be scanned. 
+@ComponentScan without arguments tells Spring to scan the current package and all of its sub-packages.
+
+14.Whats is the Diference bew JPA , Hibernate and ORM?
+JPA: Its the one step above ORM. Its high level API and specification so that different ORM tools can implement so that it provides the flexibility to developer to change the implementation from one ORM to another (for example if application uses the JPA api and implementaion is hibernate. In future it can switch to IBatis if required. But on the other if application directly lock the implementation with Hibernate without JPA platform, switiching is going to be herculean task)
+ORM: Object Relational Mapping is concept/process of converting the data from Object oriented language to relational DB and vice versa For example in java its done with the help of reflection and jdbc.
+Hibernate: Its the implementation of above concept.
+
+
+15.What is indexing in Database?
+indexing is a way to optimize the performance of a database by minimizing the number of disk accesses required when a query is processed. 
+
+16.What are 4 types of Drivers in Jdbc?
+Type-1 driver or JDBC-ODBC bridge driver
+Type-2 driver or Native-API driver
+Type-3 driver or Network Protocol driver
+Type-4 driver or Thin driver
+
+
+17.What is diffence between @component and @bean and @service?
+ If any class is annotated with @Component it will be automatically detect by using classpath scan. 
+@bean- if you want specific implementation based on dynamic condition.
+@Service- annotates classes at the service layer.
+
+
+18. What is difference bew SOAP and restful services techinically?
+ SOAP stands for Simple Object Access Protocol.SOAP is a protocol which was designed before REST and came into the picture. The main idea behind designing SOAP was to ensure that programs built on different platforms and programming languages could exchange data in an easy manner.
+REST was designed specifically for working with components such as media components, files, or even objects on a particular hardware device. Any web service that is defined on the principles of REST can be called a RestFul web service. A Restful service would use the normal HTTP verbs of GET, POST, PUT and DELETE for working with the required components. REST stands for Representational State Transfer.
+
+19 . Difference in POST and PUT?
+POST means "create new"  and PUT means "insert, replace if already exists"
+ Calling a POST request repeatedly have side effects of creating the same resource multiple times.PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result.
+
+20.Is react uni directional or Bi directional
+React uses unidirectional data flow.
